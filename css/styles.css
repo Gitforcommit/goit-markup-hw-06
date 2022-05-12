@@ -30,6 +30,10 @@ img {
   display: block;
 }
 
+textarea {
+  resize: none;
+}
+
 /* Header */
 .sections {
   padding-top: 94px;
@@ -744,39 +748,20 @@ img {
   letter-spacing: 0.03em;
 }
 
-.modal-icon {
-  position: absolute;
-  left: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.modal-label {
-  margin: auto;
-}
-
-/* .modal-svg {
-  
-} */
-
 .modal-input {
   width: 448px;
+  position: relative;
   height: 40px;
   margin: 4px 40px 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  position: relative;
-}
-.modal-form {
-  width: 528px;
 }
 
-.modal-form {
-  display: inline-block;
-}
-
-textarea {
-  resize: none;
+.modal-svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: orange;
 }
 
 .modal-textarea {

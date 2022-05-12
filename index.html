@@ -366,20 +366,18 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <h2 class="modal-text">Оставьте свои данные, мы вам перезвоним</h2>
-        <form class="modal-form">
-            <div class="modal-svg">
-          <label class="modal-label">
-            <p class="input-name">Имя</p>
-            <input type="text" name="fullname" class="modal-input">
-            </label>
-            <div class="modal-icon">
-            <svg width="15px" height="15px">
-                  <use href="/svg-modal/svg-modal again/symbol-defs.svg#icon-human"></use></svg></div>
-            </div>
+        <form>
+          <div>
+          <label for="name" class="modal-label"><p class="input-name">Имя</p></label>
+              <div class="modal-icon">
+            <input type="text" name="fullname" class="modal-input" id="name">
+            <svg  class="modal-svg" width="15px" height="15px">
+        <use href="/svg-modal/svg-modal again/symbol-defs.svg#icon-human"></use>
+      </svg>
+    </div>
+      </div>
               <label class="modal-label"><p class="input-name">Телефон</p>
                 <input type="tel" name="phone_number" class="modal-input">
-                
-                
                 </label>
               <label class="modal-label">
     <p class="input-name">Почта</p>
@@ -397,8 +395,6 @@
   <button type="submit" class="button-modal cursor">
             <div class="button-text">Отправить</div>
           </button>
-            </form>
-          </label>
         </form>
         <button type="button" data-modal-close class="btn-closing">
         <svg width="11" height="11" class="close-button"><use href="./svg-modal/symbol-defs.svg#icon-xrectuk"></use></svg></button>
