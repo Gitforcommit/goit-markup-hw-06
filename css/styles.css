@@ -757,6 +757,10 @@ textarea {
   border-radius: 4px;
 }
 
+.modal-icon {
+  position: relative;
+}
+
 .modal-svg {
   position: absolute;
   top: 50%;
