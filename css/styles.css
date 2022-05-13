@@ -541,6 +541,17 @@ textarea {
   background-color: #2f303a;
   padding: 60px 0px 60px 0px;
 }
+
+.subscribe {
+  ont-weight: 700;
+  font-size: 14px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: white;
+}
+
 .adress a {
   font-weight: 400;
   font-size: 14px;
@@ -778,16 +789,79 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #757575;
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.modal-textarea:hover {
+  border-color: var(--color-for-buttons);
+}
+
+.checkbox:checked + .checkbox-text:before {
+  background-image: url(/images/agree.svg);
+  background-color: var(--color-for-buttons);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: var(--color-for-buttons);
+}
+
+.checkbox-text:before {
+  content: '';
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--main-text-color);
+  border-radius: 25%;
+  margin-right: 8px;
+}
+
+.checkbox-border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal-input {
+  display: flex;
+  align-items: center;
   width: 448px;
   position: relative;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-top: 4px;
+  margin-bottom: 10px;
   padding: 12px 35px;
+  cursor: pointer;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:nth-last-child() {
+}
+
+.modal-input:hover,
+.modal-input:focus {
+  border-color: var(--color-for-buttons);
+  outline: none;
+}
+
+.modal-input:hover + .modal-svg {
+  fill: #188ce8;
+}
+
+.modal-input:hover,
+.modal-input:focus + .modal-svg {
+  fill: #188ce8;
 }
 
 .modal-icon {
@@ -802,6 +876,9 @@ textarea {
   transform: translateY(-50%);
   justify-content: center;
   align-items: center;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-textarea {
@@ -811,10 +888,19 @@ textarea {
   margin: auto;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 4px;
   margin-top: 4px;
   margin-bottom: 20px;
+  cursor: pointer;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-textarea:hover,
+.modal-textarea:focus {
+  outline: none;
+  border-color: var(--color-for-buttons);
 }
 
 .agreement-link {
@@ -836,6 +922,14 @@ textarea {
 
 .close-button {
   fill: black;
+  cursor: pointer;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-button:hover {
+  fill: var(--color-for-buttons);
 }
 
 .btn-closing {
@@ -877,4 +971,61 @@ textarea {
 
 .portfolio-list:hover .overlay-text {
   transform: translateY(0%);
+}
+
+.input-footer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 93px;
+}
+
+.input-content {
+  display: flex;
+}
+
+.email-input {
+  min-width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  display: flex;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2f303a;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-email-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+
+.button-email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  border-style: none;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: 12px;
+}
+
+.email-svg {
+  margin-left: 10px;
+}
+
+.button-container {
+  margin-left: 10px;
+  display: inline;
 }
