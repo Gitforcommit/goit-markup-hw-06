@@ -437,38 +437,50 @@
       <div class="modal">
         <h2 class="modal-text">Оставьте свои данные, мы вам перезвоним</h2>
         <form>
-          <div>
+          <div class="modal-field">
             <label for="name" class="modal-label">Имя</label>
             <div class="modal-icon">
               <input type="text" name="fullname" class="modal-input" id="name" />
-              <svg class="modal-svg" width="15px" height="15px">
+              <svg class="modal-svg" width="12px" height="12px">
                 <use href="/svg-modal/svg-modal again/symbol-defs.svg#icon-human"></use>
               </svg>
             </div>
           </div>
-          <label class="modal-label"
-            >Телефон
-            <input type="tel" name="phone_number" class="modal-input" />
-          </label>
-          <label class="modal-label">
-            Почта
-            <input type="email" name="email" class="modal-input" />
-          </label>
+          <div class="modal-field">
+            <label class="modal-label">Телефон</label>
+            <div class="modal-icon">
+              <input type="tel" name="phone_number" class="modal-input" />
+              <svg class="modal-svg" width="12px" height="12px">
+                <use href="/svg-modal/svg-modal again/symbol-defs.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label class="modal-label">Почта</label>
+            <div class="modal-icon">
+              <input type="email" name="email" class="modal-input" />
+              <svg class="modal-svg" width="15px" height="12px">
+                <use href="/svg-modal/svg-modal again/symbol-defs.svg#icon-mail"></use>
+              </svg>
+            </div>
+          </div>
           <label class="modal-label">
             Комментарий
             <textarea
               name="comment"
-              rows="5"
+              rows="7"
               placeholder="Введите текст"
               class="modal-textarea"
             ></textarea>
           </label>
+          <div class="modal-field">
+            <label class="checkbox-text">
+              <input type="checkbox" name="agreement" />
 
-          <label>
-            <input type="checkbox" name="agreement" />
-            Соглашаюсь с рассылкой и принимаю
-            <a href="" class="agreement-link">Условия договора</a>
-          </label>
+              Соглашаюсь с рассылкой и принимаю
+              <a href="" class="agreement-link">Условия договора</a>
+            </label>
+          </div>
           <button type="submit" class="button-modal cursor">
             <span class="button-text">Отправить</span>
           </button>

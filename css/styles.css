@@ -711,8 +711,9 @@ textarea {
 
 .modal {
   position: absolute;
-  max-height: 581px;
-  max-width: 528px;
+  height: 581px;
+  width: 528px;
+  padding: 40px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -722,6 +723,11 @@ textarea {
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+
+.modal-field {
+  margin-bottom: 10px;
 }
 
 .button-modal {
@@ -729,32 +735,59 @@ textarea {
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 200px;
   height: 50px;
   border-style: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88px;
+  letter-spacing: 0.06em;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  margin: 30px 164px 40px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .modal-text {
-  margin: 40px 40px 0px 40px;
   text-align: center;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.03em;
+  margin-bottom: 12px;
+}
+
+.modal-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.12px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.checkbox-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal-input {
   width: 448px;
   position: relative;
   height: 40px;
-  margin: 4px 40px 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  margin-top: 4px;
+  padding: 12px 35px;
 }
 
 .modal-icon {
@@ -763,9 +796,12 @@ textarea {
 
 .modal-svg {
   position: absolute;
+  fill: black;
+  left: 15px;
   top: 50%;
   transform: translateY(-50%);
-  fill: orange;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-textarea {
@@ -777,9 +813,11 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 4px;
+  margin-top: 4px;
+  margin-bottom: 20px;
 }
 
-. .agreement-link {
+.agreement-link {
   text-decoration: underline;
   cursor: pointer;
   color: var(--color-for-buttons);
