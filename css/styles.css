@@ -808,7 +808,7 @@ textarea {
 }
 
 .checkbox:checked + .checkbox-text:before {
-  background-image: url(/images/agree.svg);
+  background-image: url(./images/agree.svg);
   background-color: var(--color-for-buttons);
   background-size: contain;
   background-origin: border-box;
