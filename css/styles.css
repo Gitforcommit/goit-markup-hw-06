@@ -808,7 +808,7 @@ textarea {
 }
 
 .checkbox:checked + .checkbox-text:before {
-  background-image: url(./images/agree.svg);
+  background-image: url(../images/agree.svg);
   background-color: var(--color-for-buttons);
   background-size: contain;
   background-origin: border-box;
@@ -928,10 +928,6 @@ textarea {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-button:hover {
-  fill: var(--color-for-buttons);
-}
-
 .btn-closing {
   position: absolute;
   background-color: white;
@@ -944,6 +940,14 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.btn-closing:hover .close-button {
+  fill: var(--color-for-buttons);
+}
+
+.btn-closing:focus .close-button {
+  fill: var(--color-for-buttons);
 }
 
 .overlay {
