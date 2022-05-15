@@ -1023,6 +1023,7 @@ textarea {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: 12px;
+  margin-right: 0;
 }
 
 .email-svg {
